@@ -1,0 +1,142 @@
+<style class="zashStyle">
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);<br />
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);<br />
+    /* css */<br />
+    .zashStyle {<br />
+        display: none;<br />
+    }<br />
+    .coverImage {<br />
+        border-radius: 0.00em;<br />
+        border: 0.00em solid lightGray;<br />
+        padding: 0.00em !important;<br />
+        display: block;<br />
+        margin: auto;<br />
+    }<br />
+    .coverImage:hover {<br />
+        border: 0.00em solid dodgerBlue;<br />
+    }<br />
+    .kshowSynopsisTable,<br />
+	.showInfoTable,<br />
+	.collectionTable {<br />
+        background-color: whiteSmoke;<br />
+        border: 0.25em solid lightGray !important;<br />
+        border-radius: 0.25em;<br />
+        margin-left: auto;<br />
+		margin-right: auto;<br />
+        cursor: default;<br />
+    }<br />
+    .kshowSynopsisTable th,<br />
+    .showInfoTable th,<br />
+    .movieTable th,<br />
+    .batchLinksTable th,<br />
+    .showLinksTable th {<br />
+        font-family: 'Droid Sans', sans-serif; font-weight: 400;<br />
+        text-align: center;<br />
+        vertical-align: middle;<br />
+    }<br />
+    .kshowSynopsisTable td {<br />
+        font-family: 'Droid Sans', sans-serif; font-weight: 400;<br />
+        padding: 0.5em !important;<br />
+        text-align: justify;<br />
+    }<br />
+    .showInfoTable, .collectionTable {<br />
+        background-color: whiteSmoke;<br />
+        border: 0.25em solid lightGray !important;<br />
+        border-radius: 0.25em;<br />
+        margin: auto;<br />
+        cursor: default;<br />
+    }<br />
+    .showInfoTable td, .collectionTable td {<br />
+        text-align: center;<br />
+    }<br />
+    .batchLinksTable,<br />
+    .showLinksTable,<br />
+    .movieTable {<br />
+        background-color: whiteSmoke;<br />
+        border: 0.25em solid lightGray !important;<br />
+        border-radius: 0.25em;<br />
+        margin: auto;<br />
+        cursor: default;<br />
+    }<br />
+	.collectionTable tr,<br />
+    .batchLinksTable tr,<br />
+    .showLinksTable tr,<br />
+    .movieTable tr {<br />
+        background-color: whiteSmoke;<br />
+        margin: auto;<br />
+        cursor: default;<br />
+        text-align: center;<br />
+    }<br />
+	.collectionTable tr:hover,<br />
+    .batchLinksTable tr:hover:not(:first-child),<br />
+    .showLinksTable tr:hover:not(:first-child),<br />
+    .movieTable tr:hover:not(:first-child) {<br />
+        color: #F8F8F8;<br />
+        text-shadow: 0 1px rgba(255, 255, 255, 0.15);<br />
+        background-color: rgba(120,120,120,0.5);<br />
+    }<br />
+    .batchLinksTable tr td,<br />
+    .showLinksTable tr td,<br />
+    .movieTable tr td {<br />
+        padding: 0.5em !important;<br />
+        font-family: 'Lato', sans-serif; font-weight: 400;<br />
+        text-decoration: none;<br />
+        text-shadow: none;<br />
+        text-align: center;<br />
+    }<br />
+    .batchLinksTable tr td:not(:nth-child(1):nth-child(2)),<br />
+    .showLinksTable tr td:not(:nth-child(1):nth-child(2)),<br />
+    .movieTable tr td:not(:nth-child(1):nth-child(2)) {<br />
+        font-family: 'Lato', sans-serif; font-weight: 700;<br />
+    }<br />
+    .batchLinksTable tr td a,<br />
+    .showLinksTable tr td a,<br />
+    .movieTable tr td a {<br />
+        color: #000000;<br />
+        text-decoration: none;<br />
+        text-shadow: none;<br />
+        font-family: 'Lato', sans-serif; font-weight: 900;<br />
+    }<br />
+    .batchLinksTable tr td a:hover,<br />
+    .showLinksTable tr td a:hover,<br />
+    .movieTable tr td a:hover {<br />
+        color: #4169E1;<br />
+        text-decoration: none;<br />
+        text-shadow: 0 1px rgba(255, 255, 255, 0.15);<br />
+    }<br />
+	.collectionTable tr td a {<br />
+        text-decoration: none;<br />
+        text-shadow: none;<br />
+        font-family: 'Droid Sans', sans-serif; font-weight: 700;<br />
+    }<br />
+	.collectionTable tr td a:hover {<br />
+		color: #6600FF;<br />
+        text-decoration: none;<br />
+        text-shadow: 0 1px rgba(255, 255, 255, 0.15);<br />
+	}<br />
+    .donateImage {<br />
+        display: block;<br />
+        margin: auto;<br />
+    }<br />
+	/* transition hover effect */<br />
+	.coverImage, .kshowSynopsisTable tr,<br />
+	.collectionTable, .collectionTable tr,<br />
+	.batchLinksTable, .showLinksTable, .movieTable,<br />
+	.batchLinksTable tr, .showLinksTable tr, .movieTable tr,<br />
+	.batchLinksTable tr td:not(:nth-child(1):nth-child(2)),<br />
+    .showLinksTable tr td:not(:nth-child(1):nth-child(2)),<br />
+    .movieTable tr td:not(:nth-child(1):nth-child(2)) {<br />
+        -moz-transition: all 0.25s ease-in-out 0s;<br />
+        -webkit-transition: all 0.25s ease-in-out 0s;<br />
+        -o-transition: all 0.25s ease-in-out 0s;<br />
+        transition: all 0.25s ease-in-out 0s;<br />
+	}<br />
+	/* smooth transition hover effect */<br />
+	.coverImage, .collectionTable tr, .collectionTable tr td a,<br />
+	.batchLinksTable tr, .showLinksTable tr, .movieTable tr,<br />
+	.batchLinksTable tr td a, .showLinksTable tr td a, .movieTable tr td a{<br />
+        -moz-transition: all 0.25s ease-in-out 0s;<br />
+        -webkit-transition: all 0.25s ease-in-out 0s;<br />
+        -o-transition: all 0.25s ease-in-out 0s;<br />
+        transition: all 0.25s ease-in-out 0s;<br />
+	}<br />

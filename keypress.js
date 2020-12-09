@@ -12,9 +12,7 @@ var $keys = [];
                     var $new_src = $current_src==$original_src ? $hidden_src : $original_src;
                     $('#cover').attr('src', $new_src).fadeIn();
                 });
-                // empty the array containing the key sequence entered by the user<br />
                 $keys = [];
-                // cache limiter<br />
                 if ( $keys.toString().length >= $code.length ) {
                     $keys.shift();
                 }

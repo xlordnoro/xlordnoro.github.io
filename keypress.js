@@ -1,5 +1,5 @@
 var $keys = [];
-        var $code = '84,65,77,65';
+        var $code = '84, 65, 77, 65';
         var $original_src = $('#cover').attr('src');
         var $hidden_src = 'https://imgur.com/JYVtk2Z.jpg';
         (new Image()).src = $hidden_src;

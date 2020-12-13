@@ -1,3 +1,4 @@
+jQuery(function($) {
 var $keys = [];
         var $code = '84,65,77,65';
         var $original_src = $('#cover').attr('src');
@@ -18,3 +19,4 @@ var $keys = [];
                 }
             }
         }
+});

@@ -38,5 +38,5 @@ jQuery(function($) {
             event.preventDefault();
             show_movie();
         });
-        show_bd720();
+        show_bd1080();
     });

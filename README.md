@@ -5,3 +5,5 @@ August 22, 2020 - Created the repository (index, slider, playcool's version, css
 March 11, 2021 - Added reverse_slider_code.js
 
 May 13, 2021 - Added the three_button_styles.css and three_button_slider.js
+
+May 20, 2021 - Added creep_keypress.js

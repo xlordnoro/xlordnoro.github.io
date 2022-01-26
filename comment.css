@@ -3,3 +3,25 @@
   text-align: center;
   font-size: 17px;
 }
+
+/* Set the colors for the background on the various statuses and changes the font to white.*/
+.map .donor td {
+  background-color: blue;
+}
+
+.map .ongoing td {
+  background-color: green;
+}
+
+.map .future td {
+  background-color: yellow;
+}
+
+.map .planned td {
+  background-color: red;
+}
+
+.map .text td {
+  background-color: black;
+  color: white;
+}

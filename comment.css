@@ -1,0 +1,5 @@
+/* Set the contact info to be aligned in the center and larger than the rest of the comment text.*/
+table .comment tr td {
+  text-align: center;
+  font-size: 17px;
+}

@@ -61,9 +61,3 @@ td.text {
 .future #different {
   color: black;
 }
-
-/* Set the font alignment for the div tags containing the tables for the buttons.*/
-#ongoing_Projects {
-  display: none;
-  align: inline-block;
-}

@@ -1,10 +1,12 @@
 /* Set the contact info to be aligned in the center and larger than the rest of the comment text.*/
+
 .contact td {
   text-align: center;
   font-size: 17px;
 }
 
 /* Set the colors for the background on the various statuses and changes the font to white.*/
+
 td.donor {
   background-color: blue;
 }
@@ -24,4 +26,38 @@ td.planned {
 td.text {
   background-color: black;
   color: white;
+}
+
+.dropped h2 {
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+}
+
+/* Set the default font colors for the tables, background for future projects, and del (strikethrough) tag.*/
+
+.cut td {
+  color: red;
+  font-size: 16px;
+}
+.cut del {
+  color: red;
+}
+.ongoing td {
+  color: white;
+}
+.current td {
+  color: white;
+}
+.cBD td {
+  color: white;
+}
+.finished td {
+  color: white;
+}
+.future td {
+  color: white;
+}
+.future #different {
+  color: black;
 }

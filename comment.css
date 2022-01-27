@@ -28,13 +28,13 @@ td.text {
   color: white;
 }
 
+/* Set the default font colors for the tables, background for future projects, and del (strikethrough) tag.*/
+
 .dropped h2 {
    text-align: center;
    padding: 0px;
    margin: 0px;
 }
-
-/* Set the default font colors for the tables, background for future projects, and del (strikethrough) tag.*/
 
 .cut td {
   color: red;
@@ -60,4 +60,11 @@ td.text {
 }
 .future #different {
   color: black;
+}
+
+/* Sets the alignment of the text for the tables inside the buttons.*/
+
+#ongoing_Projects {
+  display:none;
+  align:inline-block;
 }

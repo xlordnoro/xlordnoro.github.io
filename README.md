@@ -9,3 +9,5 @@ May 13, 2021 - Added the three_button_styles.css and three_button_slider.js
 May 20, 2021 - Added creep_keypress.js
 
 Jan 9, 2022 - Added three_button_slider_movie.js
+
+Jan 26, 2022 - Added comment.css to make the css code in the various tables easier to read. Probably won't add the js code unless I'm willing to grind it out which is pointless when it already works fine as is.

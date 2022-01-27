@@ -63,7 +63,7 @@ td.text {
 }
 
 /* Set the font alignment for the div tags containing the tables for the buttons.*/
-div #ongoing_Projects {
+#ongoing_Projects {
   display: none;
   align: inline-block;
 }

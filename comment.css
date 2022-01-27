@@ -5,23 +5,23 @@
 }
 
 /* Set the colors for the background on the various statuses and changes the font to white.*/
-.map.donor td {
+.donor td {
   background-color: blue;
 }
 
-.map.ongoing td {
+.ongoing td {
   background-color: green;
 }
 
-.map.future td {
+.future td {
   background-color: yellow;
 }
 
-.map.planned td {
+.planned td {
   background-color: red;
 }
 
-.map.text td {
+.text td {
   background-color: black;
   color: white;
 }

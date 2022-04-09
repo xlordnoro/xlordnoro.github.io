@@ -14,4 +14,4 @@ Jan 26, 2022 - Added comment.css to make the css code in the various tables easi
 
 March 24, 2022 - Added creative_workshop.js & creative_workshop.css to accomodate J0my's banner contributions into the post.
 
-April 9, 2022 - Added ssstylish.css for testing mass-post css modifications along with spicy_keydown.js and pervert_keydown.js for the BD's of season for Arifureta.
+April 9, 2022 - Added ssstylish.css for testing mass-post css modifications along with spicy_keydown.js and pervert_keydown.js for the BD's of season 2 for Arifureta.

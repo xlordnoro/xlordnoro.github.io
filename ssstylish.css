@@ -1,7 +1,4 @@
-.ssstylish tr {
+.ssstylish th, tbody, tr {
 background-color: black;
-}
-
-.ssstylish th, tbody {
 color: white;
 }

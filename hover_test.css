@@ -7,7 +7,7 @@
   background-size: cover;
 }
 
-.image p {
+.image span {
   opacity: 0;
   transform: scale(0);
   transition: 0.8s;
@@ -17,7 +17,7 @@
   box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.9) inset;
 }
 
-.image:hover p {
+.image:hover span {
   opacity: 1;
   transform: scale(1);
 }

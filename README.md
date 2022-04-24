@@ -16,6 +16,6 @@ March 24, 2022 - Added creative_workshop.js & creative_workshop.css to accomodat
 
 April 9, 2022 - Added ssstylish.css for testing mass-post css modifications along with spicy_keydown.js and pervert_keydown.js for the BD's of season 2 for Arifureta.
 
-April 18, 2022 - Added nyaa_keydown.js to show a nice cat maid cover image on the otome game post.
+April 18, 2022 - Added fancy_hover.css and nyaa_keydown.js to show a nice cat maid cover image on the otome game post.
 
 April 23, 2022 - Added yuki_keydown.js to show a Christmas cover image on the Kakkou no Linazuke post.

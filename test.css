@@ -27,7 +27,7 @@
 .image__overlay > * {
 	transform: translateY(20px);
 	transition: transform 0.25s;
-        display: none !important;
+        display: block !important;
 }
 
 .image__overlay:hover {

@@ -18,4 +18,4 @@ April 9, 2022 - Added ssstylish.css for testing mass-post css modifications alon
 
 April 18, 2022 - Added fancy_hover.css and nyaa_keydown.js to show a nice cat maid cover image on the otome game post.
 
-April 23, 2022 - Added yuki_keydown.js to show a Christmas cover image on the Kakkou no Linazuke post.
+April 23, 2022 - Added yuki_keydown.js to show a Christmas cover image on the Kakkou no Iinazuke post.

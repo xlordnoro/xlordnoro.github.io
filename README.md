@@ -20,4 +20,4 @@ April 18, 2022 - Added fancy_hover.css and nyaa_keydown.js to show a nice cat ma
 
 April 23, 2022 - Added yuki_keydown.js to show a Christmas cover image on the Kakkou no Iinazuke post.
 
-May 11, 2022 - Webhook test. Test.
+May 11, 2022 - Webhook test via discord channel.

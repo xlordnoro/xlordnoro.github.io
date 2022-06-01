@@ -1,0 +1,27 @@
+.post-94259 #content article {
+background-color: black; 
+}
+
+.kshowSynopsisTable th, tbody, tr {
+background-color: black;
+border-color: white;
+color: white;
+}
+
+.batchLinksTable th, tbody, tr {
+background-color: black;
+border-color: white;
+color: white;
+}
+
+.showInfoTable th, tbody, tr {
+background-color: black;
+border-color: white;
+color: white;
+}
+
+.showLinksTable th, tbody, tr {
+background-color: black;
+border-color: white;
+color: white;
+}

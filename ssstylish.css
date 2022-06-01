@@ -1,22 +1,26 @@
-.kshowSynopsisTable.ssstylish th, tbody, tr {
+div#content.site-content {
+background-color: black; 
+}
+
+.kshowSynopsisTable th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;
 }
 
-.batchLinksTable.ssstylish th, tbody, tr {
+.batchLinksTable th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;
 }
 
-.showInfoTable.ssstylish th, tbody, tr {
+.showInfoTable th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;
 }
 
-.showLinksTable.ssstylish th, tbody, tr {
+.showLinksTable th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;

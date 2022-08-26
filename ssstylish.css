@@ -1,22 +1,22 @@
-.kshowSynopsisTable th, tbody, tr {
+.kshowSynopsisTable table, th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;
 }
 
-.batchLinksTable th, tbody, tr {
+.batchLinksTable table, th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;
 }
 
-.showInfoTable th, tbody, tr {
+.showInfoTable table, th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;
 }
 
-.showLinksTable th, tbody, tr {
+.showLinksTable table, th, tbody, tr {
 background-color: black;
 border-color: white;
 color: white;

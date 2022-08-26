@@ -1,23 +1,23 @@
 .kshowSynopsisTable table, th, tbody, tr {
 background-color: black;
-border-color: white;
+border:2px solid white;
 color: white;
 }
 
 .batchLinksTable table, th, tbody, tr {
 background-color: black;
-border-color: white;
+border:2px solid white;
 color: white;
 }
 
 .showInfoTable table, th, tbody, tr {
 background-color: black;
-border-color: white;
+border:2px solid white;
 color: white;
 }
 
 .showLinksTable table, th, tbody, tr {
 background-color: black;
-border-color: white;
+border:2px solid white;
 color: white;
 }

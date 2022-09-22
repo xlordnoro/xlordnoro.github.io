@@ -23,3 +23,5 @@ April 23, 2022 - Added yuki_keydown.js to show a Christmas cover image on the Ka
 May 11, 2022 - Webhook test via discord channel.
 
 September 17, 2022 - Added shuumatsu_no_harem_keydown.js to show a Christmas cover image on the Shuumatsu no Harem post.
+
+September 22, 2022 - Added pansy_keydown.js & cosmos_keydown.js to show a Pansy and Cosmos cover image on the oresuki post.

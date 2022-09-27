@@ -1,0 +1,54 @@
+a.hovertext {
+    position: relative;
+    width: 490px;
+    text-decoration: none;
+    text-align: center;
+}
+a.hovertext:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0.5em 20px;
+    width: 493px;
+    background: rgba(0,0,0,0.8);
+    text-decoration: none !important;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+}
+a.hovertext:hover:after, a.hovertext:focus:after {
+    opacity: 1.0;
+}
+.spoilerContainer {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.spoilerContent {
+    white-space: nowrap;
+    overflow: visible;
+    margin-left: auto;
+    margin-right: auto;
+}
+.spoilerPane a, .spoilerPane img, .spoilerCell {
+    display: inline-block;
+}
+.showInfoTable td, {
+    text-align: justify;
+}
+.batchLinksTable th,
+.MEGALinksTable th,
+.showLinksTable th,
+.batchLinksTable td,
+.MEGALinksTable td,
+.showLinksTable td {
+    text-align: center;
+    vertical-align: middle;
+}
+.mycolor {
+    color: #5B2E01;
+}

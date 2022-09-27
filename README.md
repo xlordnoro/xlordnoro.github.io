@@ -25,3 +25,5 @@ May 11, 2022 - Webhook test via discord channel.
 September 17, 2022 - Added shuumatsu_no_harem_keydown.js to show a Christmas cover image on the Shuumatsu no Harem post.
 
 September 22, 2022 - Added pansy_keydown.js & cosmos_keydown.js to show a Pansy and Cosmos cover image on the oresuki post.
+
+September 27, 2022 - Removed the singular keydown .js files for arifureta & oresuki which were replaced with combined variants that contained both jquery functions inside them to reduce load times on posts and ease of use over all. The new filenames are arifureta_keydown.js & oresuki_keydown.js.

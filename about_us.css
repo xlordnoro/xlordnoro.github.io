@@ -1,6 +1,6 @@
 a.hovertext {
     position: relative;
-    width: 490px;
+    width: 100%;
     text-decoration: none;
     text-align: center;
 }
@@ -10,7 +10,7 @@ a.hovertext:after {
     left: 0;
     bottom: 0;
     padding: 0.5em 20px;
-    width: 493px;
+    width: 100%;
     background: rgba(0,0,0,0.8);
     text-decoration: none !important;
     color: #fff;

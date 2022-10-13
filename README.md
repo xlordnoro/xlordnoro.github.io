@@ -29,3 +29,5 @@ September 22, 2022 - Added pansy_keydown.js & cosmos_keydown.js to show a Pansy 
 September 27, 2022 - Removed the singular keydown .js files for arifureta & oresuki which were replaced with combined variants that contained both jquery functions inside them to reduce load times on posts and ease of use over all. The new filenames are arifureta_keydown.js & oresuki_keydown.js.
 
 Continued - Added about_us.css & about_us.js files containing the external code needed for the about us post to function properly after the 5.0 update.
+
+October 12, 2022 - Added flip_flapper_keydown.js to show an easter egg in the flip flappers post.

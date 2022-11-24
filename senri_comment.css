@@ -1,5 +1,4 @@
 /* Set the default font colors for the tables, background for future projects, and del (strikethrough) tag.*/
-.cut del {
-  color: red;
+#Projects {
   font-family: "Arial";
 }

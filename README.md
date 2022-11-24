@@ -31,3 +31,5 @@ September 27, 2022 - Removed the singular keydown .js files for arifureta & ores
 Continued - Added about_us.css & about_us.js files containing the external code needed for the about us post to function properly after the 5.0 update.
 
 October 12, 2022 - Added flip_flapper_keydown.js to show an easter egg in the flip flappers post.
+
+November 24, 2022 - Added senri_comment.css to fix the css issues with Senri's comment after altering the contents to show which dropped projects were taken by me and Playcool.

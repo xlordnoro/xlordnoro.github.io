@@ -1,0 +1,44 @@
+.spoiler {
+    display: block;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    background-color: #c3c3c3;
+}
+.switcher {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 0;
+}
+.switcher td {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.synopsisTable td {
+    text-align: justify;
+}
+.batchLinksTable td,
+.showLinksTable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.showInfoTable td, {
+    text-align: justify;
+}
+.batchLinksTable th,
+.showLinksTable th,
+.batchLinksTable td,
+.showLinksTable td {
+    text-align: center;
+    vertical-align: middle;
+}

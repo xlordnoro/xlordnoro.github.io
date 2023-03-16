@@ -35,3 +35,5 @@ October 12, 2022 - Added flip_flapper_keydown.js to show an easter egg in the fl
 November 24, 2022 - Added senri_comment.css to fix the css issues with Senri's comment after altering the contents to show which dropped projects were taken by me and Playcool.
 
 March 9, 2023 - Added luminous_witches_yuki_keydown.js to show an easter egg in the luminous witches post.
+
+March 15, 2023 - Added futoku_no_guild_keydown.js to show an easter egg in the futoku no guild post.

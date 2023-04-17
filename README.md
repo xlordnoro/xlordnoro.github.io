@@ -1,4 +1,4 @@
-This repository was created to streamline the css/js required for posts due to the recent wordpress update which is absolute shit xD
+# Disclaimer: This repository was created to streamline the css/js required for posts due to the recent wordpress update which is absolute shit xD
 
 August 22, 2020 - Created the repository (index, slider, playcool's version, css styles, etc.)
 

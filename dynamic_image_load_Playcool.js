@@ -13,8 +13,8 @@ jQuery(function($) {
             var imageName = imgTitle.replace(/[^a-zA-Z0-9 ]/g, "_");
 
             // Set the image source based on the generated filenames for JPG and PNG formats in the same folder
-            var imagePathJPG = "/ssd2/v1/noro/covers/" + imageName + ".jpg";
-            var imagePathPNG = "/ssd2/v1/noro/covers/" + imageName + ".png";
+            var imagePathJPG = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/covers/" + imageName + ".jpg";
+            var imagePathPNG = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/covers/" + imageName + ".png";
 
             // Try loading the image with the JPG extension first, then fallback to PNG if not found
             loadImage(imagePathJPG, function () {

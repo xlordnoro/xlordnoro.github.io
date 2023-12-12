@@ -1,4 +1,4 @@
-Query(function($) {
+jQuery(function($) {
 // Function to update the image sources based on the extracted post number
     function updateImages(postNumber) {
         // Set the image sources based on the post number for cover and button images

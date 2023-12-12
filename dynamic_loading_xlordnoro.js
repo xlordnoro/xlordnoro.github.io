@@ -1,5 +1,5 @@
 jQuery(function($) {
-// Function to update the image sources based on the extracted post number
+    // Function to update the image sources based on the extracted post number
     function updateImages(postNumber) {
         // Set the image sources based on the post number for cover and button images
         var coverImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover.jpg";
@@ -9,7 +9,7 @@ jQuery(function($) {
 
         // Update the cover image
         loadImage(coverImagePath, function () {
-            document.getElementById("coverImage").src = coverImagePath;
+            $("#coverImage").attr("src", coverImagePath);
         }, function () {
             console.log("Cover image not found for post " + postNumber);
         });
@@ -24,8 +24,8 @@ jQuery(function($) {
     function updateButtonImage(buttonId, buttonOnId, imagePath) {
         loadImage(imagePath, function () {
             // Set the source for the button image
-            document.getElementById(buttonId).href = "#";
-            document.getElementById(buttonOnId).src = imagePath;
+            $("#" + buttonId).attr("href", "#");
+            $("#" + buttonOnId).attr("src", imagePath);
         }, function () {
             // Handle the case when the button image is not found
             console.log(buttonId + " image not found");

@@ -8,12 +8,10 @@ jQuery(function ($) {
         var movieImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/movie.jpg";
 
         // Update the cover image
-        loadImage(coverImagePath, function () {
-            $("#coverImage").attr("src", coverImagePath);
-            console.log("Cover image loaded successfully!");
-        }, function (error) {
-            console.log("Error loading cover image:", error);
+        $("#coverImage").attr("src", coverImagePath).on("error", function () {
+            console.error("Error loading cover image:", coverImagePath);
         });
+        console.log("Cover image loaded successfully!");
 
         // Update the button images
         updateButtonImage("bd1080", "bd1080on", bd1080ImagePath);
@@ -23,30 +21,19 @@ jQuery(function ($) {
 
     // Function to update a button image
     function updateButtonImage(buttonId, buttonOnId, imagePath) {
-        loadImage(imagePath, function () {
-            // Set the source for the button image
-            $("#" + buttonId).attr("href", "#");
-            $("#" + buttonOnId).attr("src", imagePath);
-            console.log(buttonId + " image loaded successfully!");
-        }, function (error) {
-            // Handle the case when the button image is not found
-            console.log(buttonId + " image not found:", error);
+        // Set the source for the button image
+        $("#" + buttonId).attr("href", "#").on("error", function () {
+            console.error(buttonId + " image not found:", imagePath);
         });
+        $("#" + buttonOnId).attr("src", imagePath).on("error", function () {
+            console.error(buttonOnId + " image not found:", imagePath);
+        });
+        console.log(buttonId + " image loaded successfully!");
     }
 
     // Call the updateImages function with the extracted post number when the page loads
     var postNumber = extractPostNumber();
     updateImages(postNumber);
-
-    // Helper function to check if an image exists and execute callbacks accordingly
-    function loadImage(src, successCallback, errorCallback) {
-        var img = new Image();
-        img.onload = successCallback;
-        img.onerror = function () {
-            errorCallback("Failed to load image: " + src);
-        };
-        img.src = src;
-    }
 
     // Function to extract the post number from the URL without the ".html" extension
     function extractPostNumber() {

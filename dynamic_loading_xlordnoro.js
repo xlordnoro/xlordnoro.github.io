@@ -1,4 +1,3 @@
-// Use jQuery(function($)) to ensure the document is ready and $ is available
 jQuery(function ($) {
     // Function to update the image sources based on the extracted post number
     function updateImages(postNumber) {
@@ -7,18 +6,28 @@ jQuery(function ($) {
         var bd720ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
         var movieImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/movie.jpg";
 
-        // Update the cover image
-        loadImage(coverImagePath, function () {
-            $("#coverImage").attr("src", coverImagePath);
-            console.log("Cover image loaded successfully!");
-        }, function (error) {
-            console.log("Error loading cover image:", error);
-        });
+        // Log the loading of the original cover image
+        console.log("Original Cover image loaded successfully!");
 
-        // Update the button images
-        updateButtonImage("bd1080", "bd1080on", bd1080ImagePath);
-        updateButtonImage("bd720", "bd720on", bd720ImagePath);
-        updateButtonImage("movie", "movieon", movieImagePath);
+        // Update the cover image if the anchor tag with class "coverImage" is present
+        if ($('a.coverImage').length) {
+            loadImage(coverImagePath, function () {
+                $("a.coverImage img").attr("src", coverImagePath);
+                console.log("Cover image updated successfully!");
+            }, function (error) {
+                console.log("Error loading cover image:", error);
+                // Replace with a placeholder URL if the image fails to load
+                $("a.coverImage img").attr("src", "https://media1.giphy.com/media/11mwI67GLeMvgA/giphy.gif?cid=ecf05e47inld3vvmn6pkhrj8bjho1chqlc7ssim0286fbmnv&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+                console.log("Placeholder cover image loaded successfully!");
+            });
+        }
+
+        // Update the button images if the div with class "button_code" is present
+        if ($('.button_code').length) {
+            updateButtonImage("bd1080", "bd1080on", bd1080ImagePath);
+            updateButtonImage("bd720", "bd720on", bd720ImagePath);
+            updateButtonImage("movie", "movieon", movieImagePath);
+        }
     }
 
     // Function to update a button image
@@ -31,12 +40,17 @@ jQuery(function ($) {
         }, function (error) {
             // Handle the case when the button image is not found
             console.log(buttonId + " image not found:", error);
+            // Replace with a placeholder URL if the image fails to load
+            $("#" + buttonId + " img").attr("src", "https://media1.giphy.com/media/11mwI67GLeMvgA/giphy.gif?cid=ecf05e47inld3vvmn6pkhrj8bjho1chqlc7ssim0286fbmnv&ep=v1_gifs_search&rid=giphy.gif&ct=g" + buttonId + ".jpg");
+            console.log(buttonId + " Placeholder image loaded successfully!");
         });
     }
 
     // Call the updateImages function with the extracted post number when the page loads
-    var postNumber = extractPostNumber();
-    updateImages(postNumber);
+    $(document).ready(function () {
+        var postNumber = extractPostNumber();
+        updateImages(postNumber);
+    });
 
     // Helper function to check if an image exists and execute callbacks accordingly
     function loadImage(src, successCallback, errorCallback) {

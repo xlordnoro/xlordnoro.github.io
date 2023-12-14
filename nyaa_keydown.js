@@ -2,7 +2,7 @@ jQuery(function($) {
         var $keys = [];
         var $code = '78,89,65,65';
         var $original_src = $('#cover').attr('src');
-        var $hidden_src = 'https://imgur.com/d2UJIl1.jpg';
+        var $hidden_src = 'https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/94259/nyaa.jpg';
         (new Image()).src = $hidden_src; // preload the hidden image
         $(document)
         .keydown(function(event) {
@@ -29,7 +29,7 @@ jQuery(function($) {
         var $keys = [];
         var $code = '83,80,73,67,89';
         var $original_src = $('#cover').attr('src');
-        var $hidden_src = 'https://imgur.com/vJglpLe.jpg';
+        var $hidden_src = 'https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/94259/spicy.jpg';
         (new Image()).src = $hidden_src; // preload the hidden image
         $(document)
         .keydown(function(event) {

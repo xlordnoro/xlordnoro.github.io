@@ -2,7 +2,7 @@ jQuery(function($) {
         var $keys = [];
         var $code = '71,82,73,76,76';
         var $original_src = $('#cover').attr('src');
-        var $hidden_src = 'https://imgur.com/vSquuVh.jpg';
+        var $hidden_src = 'https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/97541/grill.jpg';
         (new Image()).src = $hidden_src; // preload the hidden image
         $(document)
         .keydown(function(event) {

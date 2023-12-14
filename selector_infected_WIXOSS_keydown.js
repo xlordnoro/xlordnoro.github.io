@@ -2,7 +2,7 @@ jQuery(function($) {
         var $keys = [];
         var $code = '84,65,77,65';
         var $original_src = $('#cover').attr('src');
-        var $hidden_src = 'https://imgur.com/JYVtk2Z.jpg';
+        var $hidden_src = 'https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/88284/tama.jpg';
         (new Image()).src = $hidden_src; // preload the hidden image
         $(document)
         .keydown(function(event) {

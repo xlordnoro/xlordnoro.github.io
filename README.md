@@ -37,3 +37,5 @@ November 24, 2022 - Added senri_comment.css to fix the css issues with Senri's c
 March 9, 2023 - Added luminous_witches_yuki_keydown.js to show an easter egg in the luminous witches post.
 
 March 15, 2023 - Added futoku_no_guild_keydown.js to show an easter egg in the futoku no guild post.
+
+December 14, 2023 - Added folders for cover_images, button_images, & donation_images. Dynamic_loading_xlordnoro.js is designed to handle dynamic loading of covers, buttons, and donation banners in all my posts since imgur is mass deleting old content. Still need to add the extra cover images from the keydown.js files as those use imgur links to swap the cover images.

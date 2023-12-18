@@ -42,4 +42,4 @@ March 15, 2023 - Added futoku_no_guild_keydown.js to show an easter egg in the f
 
 December 14, 2023 - Added folders for cover_images, button_images, & donation_images. Dynamic_loading_xlordnoro.js is designed to handle dynamic loading of covers, buttons, and donation banners in all my posts since imgur is mass deleting old content. ~~Still need to add the extra cover images from the keydown.js files as those use imgur links to swap the cover images.~~ Did this later in the same day and modified all the keydown.js files to point to their new locations on the github repo instead of imgur. Seriously, fuck imgur with their random deleting bs.
 
-December 18, 2023 - Added a link to the imager_scraper repo which handles all the automation tasks for extracting cover, button, and donation images from posts. 
+December 18, 2023 - Added a link to the imager_scraper repo which handles all the automation tasks for extracting cover, button, and donation images from posts. **I also added Dynamic_loading_zeust.js which Zeust's posting format for the site.** 

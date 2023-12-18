@@ -1,6 +1,6 @@
 # Disclaimer: This repository was created to streamline the css/js required for posts due to the recent wordpress update which is absolute shit xD
 
-# Link to image_scraper repo: <a href="https://github.com/xlordnoro/image_scraper" alt="image_scraper"></a> 
+# Link to [image_scraper repo:](https://github.com/xlordnoro/image_scraper)
 
 August 22, 2020 - Created the repository (index, slider, playcool's version, css styles, etc.)
 

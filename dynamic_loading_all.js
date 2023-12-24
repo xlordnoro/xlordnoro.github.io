@@ -9,7 +9,7 @@ jQuery(function ($) {
         var donationImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
 
         // Update the cover image if any of the anchor tags or images are present
-        var coverImageElements = $('a.coverImage, p.image');
+        var coverImageElements = $('a.coverImage, p.image, a.coverImage1');
         if (coverImageElements.length) {
             loadImage(coverImagePath, function () {
                 coverImageElements.find("img").attr("src", coverImagePath);

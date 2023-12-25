@@ -4,7 +4,7 @@ jQuery(function ($) {
         var coverImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover.jpg";
         var bd1080ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd1080.jpg";
         var bd720ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
-
+        
         // Donation image path
         var donationImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
 
@@ -36,6 +36,23 @@ jQuery(function ($) {
                 console.log("Align Center image loaded successfully!");
             });
         }
+
+        // Update spoiler images if the class "spoilerContainer" is present
+        var spoilerImageElements = $('.spoilerContainer img');
+        if (spoilerImageElements.length) {
+            updateSpoilerImages(postNumber);
+        }
+    }
+
+    // Function to update spoiler images
+    function updateSpoilerImages(postNumber) {
+        // Spoiler image paths
+        var spoiler1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd1080.jpg";
+        var spoiler720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
+
+        // Update spoiler images
+        updateSpoilerImage("btnS1", spoiler1080Path);
+        updateSpoilerImage("btnS2", spoiler720Path);
     }
 
     // Function to update a button image
@@ -61,6 +78,19 @@ jQuery(function ($) {
         }, function (error) {
             // Handle the case when the donation image is not found
             console.log("Donation image not found:", error);
+            // You can optionally add a placeholder URL here if needed
+        });
+    }
+
+    // Function to update a spoiler image
+    function updateSpoilerImage(buttonId, imagePath) {
+        loadImage(imagePath, function () {
+            // Set the source for the spoiler image
+            $("#" + buttonId).attr("src", imagePath);
+            console.log(buttonId + " image loaded successfully!");
+        }, function (error) {
+            // Handle the case when the spoiler image is not found
+            console.log(buttonId + " image not found:", error);
             // You can optionally add a placeholder URL here if needed
         });
     }

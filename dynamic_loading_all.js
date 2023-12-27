@@ -5,6 +5,20 @@ jQuery(function ($) {
         var bd1080ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd1080.jpg";
         var bd720ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
         
+        // New button image paths
+        var firstSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/first_season_bd1080.jpg";
+        var firstSeasonBd720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/first_season_bd720.jpg";
+        var secondSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/second_season_bd1080.jpg";
+        var secondSeasonBd720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/second_season_bd720.jpg";
+        var thirdSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/third_season_bd1080.jpg";
+        var thirdSeasonBd720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/third_season_bd720.jpg";
+        var fourthSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/fourth_season_bd1080.jpg";
+        var fourthSeasonBd720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/fourth_season_bd720.jpg";
+        var fifthSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/fifth_season_bd1080.jpg";
+        var fifthSeasonBd720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/fifth_season_bd720.jpg";
+        var sixthSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/sixth_season_bd1080.jpg";
+        var sixthSeasonBd720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/sixth_season_bd720.jpg";
+
         // Donation image path
         var donationImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
 
@@ -21,6 +35,18 @@ jQuery(function ($) {
         if ($('.button_code').length) {
             updateButtonImage("bd1080", "bd1080on", bd1080ImagePath);
             updateButtonImage("bd720", "bd720on", bd720ImagePath);
+            updateButtonImage("first_season_bd1080", "first_season_bd1080_on", firstSeasonBd1080Path);
+            updateButtonImage("first_season_bd720", "first_season_bd720_on", firstSeasonBd720Path);
+            updateButtonImage("second_season_bd1080", "second_season_bd1080_on", secondSeasonBd1080Path);
+            updateButtonImage("second_season_bd720", "second_season_bd720_on", secondSeasonBd720Path);
+            updateButtonImage("third_season_bd1080", "third_season_bd1080_on", thirdSeasonBd1080Path);
+            updateButtonImage("third_season_bd720", "third_season_bd720_on", thirdSeasonBd720Path);
+            updateButtonImage("fourth_season_bd1080", "fourth_season_bd1080_on", fourthSeasonBd1080Path);
+            updateButtonImage("fourth_season_bd720", "fourth_season_bd720_on", fourthSeasonBd720Path);
+            updateButtonImage("fifth_season_bd1080", "fifth_season_bd1080_on", fifthSeasonBd1080Path);
+            updateButtonImage("fifth_season_bd720", "fifth_season_bd720_on", fifthSeasonBd720Path);
+            updateButtonImage("sixth_season_bd1080", "sixth_season_bd1080_on", sixthSeasonBd1080Path);
+            updateButtonImage("sixth_season_bd720", "sixth_season_bd720_on", sixthSeasonBd720Path);
         }
 
         // Update the donation image if the anchor tag with class "donateImage" is present

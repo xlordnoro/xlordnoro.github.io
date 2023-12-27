@@ -45,3 +45,7 @@ December 14, 2023 - Added folders for cover_images, button_images, & donation_im
 December 18, 2023 - Added a link to the imager_scraper repo which handles all the automation tasks for extracting cover, button, and donation images from posts. **I also added Dynamic_loading_zeust.js which Zeust's posting format for the site.** 
 
 December 18, 2023 Part 2 - Added all of Krome's cover and donation images to the repo.
+
+December 24, 2023 - v.2.2-2.3.1 - Added Added J0my, Silverbullet's, K!ra's, and Kami's images to the repo. Heavily updated the new dynamic_loading_all.js to include more selectors for extracting various cover, button, and donation images within other posts on the site.
+
+December 26, 2023 - v.2.3.2-2.4 - Added some of Playcool's images to the repo to test out some of his chaotic posts. Updated dynamic_loading_all.js to include several new button image selectors and image paths for fetching the required images from the repo.

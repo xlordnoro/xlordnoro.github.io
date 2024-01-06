@@ -53,3 +53,5 @@ December 26, 2023 - v.2.3.2-2.4 - Added some of Playcool's images to the repo to
 December 27, 2023 - v2.4.1 - Replaced some of the covers using button images to test multiple cover functionality.
 
 January 5, 2024 - v2.4.2 - Added a new function to dynamic_loading_all.js which allows the script to handle multiple cover images inside posts with the anchor coverImage class. I also added some test button images to fully validate the rest of the code.
+
+January 6, 2024 - v2.5 - Added all of Zash's images to the repo. Expanded the dynamic_loading_all.js to include the new cover and donation image selectors which were in Zash's early posts. Might need to tweak the code if things aren't loading correctly.

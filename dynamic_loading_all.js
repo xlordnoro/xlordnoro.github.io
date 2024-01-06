@@ -23,7 +23,7 @@ jQuery(function ($) {
         var donationImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
 
         // Update the cover image if any of the anchor tags or images are present
-        var coverImageElements = $('a.coverImage, p.image, a.coverImage1');
+        var coverImageElements = $('a.coverImage, p.image, a.coverImage1, img.animeImage, img.coverImage, img.mainImage, a.postMakerAShowMovie');
         if (coverImageElements.length) {
             loadImage(coverImagePath, function () {
                 coverImageElements.find("img").attr("src", coverImagePath);
@@ -73,7 +73,7 @@ jQuery(function ($) {
         }
 
         // Update the donation image if the anchor tag with class "donateImage" is present
-        if ($('a.donateImage, p.donation img').length) {
+        if ($('a.donateImage, p.donation img, a.pleaseImage, a.postMakerADonate').length) {
             updateDonationImage(postNumber, donationImagePath);
         }
 

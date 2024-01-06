@@ -31,6 +31,29 @@ jQuery(function ($) {
             });
         }
 
+		// Additional cover image paths
+        for (var i = 0; i < 6; i++) {
+        // Use a closure to capture the current loop variable
+        (function (index) {
+        var currentImagePath;
+            if (index === 0) {
+                currentImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover.jpg";
+                } else {
+                currentImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover" + index + ".jpg";
+                }
+                var coverImageElements = $('.coverImage');
+
+                if (coverImageElements.length) {
+                    loadImage(currentImagePath, function () {
+                        coverImageElements.find("img").eq(index).attr("src", currentImagePath);
+                        console.log("Cover image loaded successfully!");
+                    }, function (error) {
+                        console.error(error);
+                    });
+                }
+            })(i);
+        }
+
         // Update the button images if the div with class "button_code" is present
         if ($('.button_code').length) {
             updateButtonImage("bd1080", "bd1080on", bd1080ImagePath);

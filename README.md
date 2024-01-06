@@ -42,10 +42,14 @@ March 15, 2023 - Added futoku_no_guild_keydown.js to show an easter egg in the f
 
 December 14, 2023 - Added folders for cover_images, button_images, & donation_images. Dynamic_loading_xlordnoro.js is designed to handle dynamic loading of covers, buttons, and donation banners in all my posts since imgur is mass deleting old content. ~~Still need to add the extra cover images from the keydown.js files as those use imgur links to swap the cover images.~~ Did this later in the same day and modified all the keydown.js files to point to their new locations on the github repo instead of imgur. Seriously, fuck imgur with their random deleting bs.
 
-December 18, 2023 - Added a link to the imager_scraper repo which handles all the automation tasks for extracting cover, button, and donation images from posts. **I also added Dynamic_loading_zeust.js which Zeust's posting format for the site.** 
+December 18, 2023 - Added a link to the imager_scraper repo which handles all the automation tasks for extracting cover, button, and donation images from posts. **I also added Dynamic_loading_zeust.js which uses Zeust's posting format for the site.** 
 
 December 18, 2023 Part 2 - Added all of Krome's cover and donation images to the repo.
 
 December 24, 2023 - v.2.2-2.3.1 - Added Added J0my, Silverbullet's, K!ra's, and Kami's images to the repo. Heavily updated the new dynamic_loading_all.js to include more selectors for extracting various cover, button, and donation images within other posts on the site.
 
 December 26, 2023 - v.2.3.2-2.4 - Added some of Playcool's images to the repo to test out some of his chaotic posts. Updated dynamic_loading_all.js to include several new button image selectors and image paths for fetching the required images from the repo.
+
+December 27, 2023 - v2.4.1 - Replaced some of the covers using button images to test multiple cover functionality.
+
+January 5, 2024 - v2.4.2 - Added a new function to dynamic_loading_all.js which allows the script to handle multiple cover images inside posts with the anchor coverImage class. I also added some test button images to fully validate the rest of the code.

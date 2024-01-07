@@ -59,3 +59,5 @@ January 6, 2024 - v2.5 - Added all of Zash's images to the repo. Expanded the dy
 v2.5.1 - Added some more cover and donation images that the scraper missed. Likely due to the regression issue which didn't appear until later in the scraping process.
 
 v2.5.2 - I corrected dynamic_loading_all.js to load images with the new classes. I forgot that most of the older classes use img classes instead of a classes like modern posts, so finding "img" and then the "src" tags wouldn't work for those classes as they're img tags already. I also added the new donation image classes which were accidentally ommitted from the codebase.
+
+v2.5.3 - Added the last of Zash's images which were skipped due to a coding error in the Image_scraper_all.js script. Forgot to add img to the new selectors...

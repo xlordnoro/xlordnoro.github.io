@@ -55,3 +55,7 @@ December 27, 2023 - v2.4.1 - Replaced some of the covers using button images to 
 January 5, 2024 - v2.4.2 - Added a new function to dynamic_loading_all.js which allows the script to handle multiple cover images inside posts with the anchor coverImage class. I also added some test button images to fully validate the rest of the code.
 
 January 6, 2024 - v2.5 - Added all of Zash's images to the repo. Expanded the dynamic_loading_all.js to include the new cover and donation image selectors which were in Zash's early posts. Might need to tweak the code if things aren't loading correctly.
+
+v2.5.1 - Added some more cover and donation images that the scraper missed. Likely due to the regression issue which didn't appear until later in the scraping process.
+
+v2.5.2 - I corrected dynamic_loading_all.js to load images with the new classes. I forgot that most of the older classes use img classes instead of a classes like modern posts, so finding "img" and then the "src" tags wouldn't work for those classes as they're img tags already. I also added the new donation image classes which were accidentally ommitted from the codebase.

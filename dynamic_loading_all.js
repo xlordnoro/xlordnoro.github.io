@@ -27,6 +27,7 @@ jQuery(function ($) {
         if (coverImageElements.length) {
             loadImage(coverImagePath, function () {
                 coverImageElements.find("img").attr("src", coverImagePath);
+                coverImageElements.attr("src", coverImagePath);
                 console.log("Cover image loaded successfully!");
             });
         }
@@ -122,7 +123,7 @@ jQuery(function ($) {
     function updateDonationImage(postNumber, donationImagePath) {
         loadImage(donationImagePath, function () {
             // Set the source for the donation image
-            $("a.donateImage img, p.donation img").attr("src", donationImagePath);
+            $("a.donateImage img, p.donation img, a.pleaseImage img, a.postMakerADonate img").attr("src", donationImagePath);
             console.log("Donation image loaded successfully!");
         }, function (error) {
             // Handle the case when the donation image is not found

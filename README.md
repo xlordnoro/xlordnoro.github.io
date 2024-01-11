@@ -61,3 +61,11 @@ v2.5.1 - Added some more cover and donation images that the scraper missed. Like
 v2.5.2 - I corrected dynamic_loading_all.js to load images with the new classes. I forgot that most of the older classes use img classes instead of a classes like modern posts, so finding "img" and then the "src" tags wouldn't work for those classes as they're img tags already. I also added the new donation image classes which were accidentally ommitted from the codebase.
 
 v2.5.3 - Added the last of Zash's images which were skipped due to a coding error in the Image_scraper_all.js script. Forgot to add img to the new selectors...
+
+v2.6 - Added more of Zash's post images to the repo along with Playcool & Pandora's.
+
+v2.7 - I added a new dynamic_all_projects_post.js which fetches the contents of the formattedPostUrls_sorted.txt and dynamically loads it to the all projects post on the site.
+
+Still need to work out adding new entries and skipping existing ones within the .txt file.
+
+v2.7.1 - Added the missing posts from page 201 as there is a weird bug where it tries to load an image file on the server which doesn't exist anymore and results in a timeout of the script.

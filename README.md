@@ -69,3 +69,5 @@ January 11, 2024 - v2.7 - I added a new dynamic_all_projects_post.js which fetch
 Still need to work out adding new entries and skipping existing ones within the .txt file.
 
 January 11, 2024 - v2.7.1 - Added the missing posts from page 201 as there is a weird bug where it tries to load an image file on the server which doesn't exist anymore and results in a timeout of the script.
+
+January 16, 2024 - v2.8 - Added post images for hataraku saibou black, maou gakuin S2, kubo-san.

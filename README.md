@@ -71,3 +71,5 @@ Still need to work out adding new entries and skipping existing ones within the 
 January 11, 2024 - v2.7.1 - Added the missing posts from page 201 as there is a weird bug where it tries to load an image file on the server which doesn't exist anymore and results in a timeout of the script.
 
 January 16, 2024 - v2.8 - Added post images for hataraku saibou black, maou gakuin S2, kubo-san.
+
+January 20, 2024 - 2.9 - Scrapped all the post images from Senri, Fully, Jonlxh, Nikefox, Neo, Noihara, & Ryan. I also expanded the dynamical_loading_all.js script to handle the new button selector classes and image paths.

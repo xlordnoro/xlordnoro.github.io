@@ -4,6 +4,11 @@ jQuery(function ($) {
         var coverImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover.jpg";
         var bd1080ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd1080.jpg";
         var bd720ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
+        var S1ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S1.jpg";
+        var S2ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S2.jpg";
+        var S3ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S3.jpg";
+        var S4ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S4.jpg";
+        var S5ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S5.jpg";
         
         // New button image paths
         var firstSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/first_season_bd1080.jpg";
@@ -56,9 +61,16 @@ jQuery(function ($) {
         }
 
         // Update the button images if the div with class "button_code" is present
-        if ($('.button_code').length) {
+        if ($('.button_code, div[style="margin-left: auto; margin-right: auto;"]').length) {
             updateButtonImage("bd1080", "bd1080on", bd1080ImagePath);
             updateButtonImage("bd720", "bd720on", bd720ImagePath);
+            updateButtonImage("1080", "1080on", bd1080ImagePath);
+            updateButtonImage("720", "720on", bd720ImagePath);
+            updateButtonImage("S1", "S1on", S1ImagePath);
+            updateButtonImage("S2", "S2on", S2ImagePath);
+            updateButtonImage("S3", "S3on", S3ImagePath);
+            updateButtonImage("S4", "S4on", S4ImagePath);
+            updateButtonImage("S5", "S5on", S5ImagePath);
             updateButtonImage("first_season_bd1080", "first_season_bd1080_on", firstSeasonBd1080Path);
             updateButtonImage("first_season_bd720", "first_season_bd720_on", firstSeasonBd720Path);
             updateButtonImage("second_season_bd1080", "second_season_bd1080_on", secondSeasonBd1080Path);

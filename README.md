@@ -72,4 +72,6 @@ January 11, 2024 - v2.7.1 - Added the missing posts from page 201 as there is a 
 
 January 16, 2024 - v2.8 - Added post images for hataraku saibou black, maou gakuin S2, kubo-san.
 
-January 20, 2024 - 2.9 - Scrapped all the post images from Senri, Fully, Jonlxh, Nikefox, Neo, Noihara, & Ryan. I also expanded the dynamical_loading_all.js script to handle the new button selector classes and image paths.
+January 20, 2024 - v2.9 - Scrapped all the post images from Senri, Fully, Jonlxh, Nikefox, Neo, Noihara, & Ryan. I also expanded the dynamical_loading_all.js script to handle the new button selector classes and image paths.
+
+January 21, 2024 - v2.9.1 - Added a bunch of fullcounter's button which the scraper missed. Likely due to it missing some of the new selectors that were added later for Senri's posts. Added a new path and case switch for ova button images.

@@ -4,6 +4,7 @@ jQuery(function ($) {
         var coverImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover.jpg";
         var bd1080ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd1080.jpg";
         var bd720ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
+        var ovaImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
         var S1ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S1.jpg";
         var S2ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S2.jpg";
         var S3ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S3.jpg";
@@ -66,6 +67,7 @@ jQuery(function ($) {
             updateButtonImage("bd720", "bd720on", bd720ImagePath);
             updateButtonImage("1080", "1080on", bd1080ImagePath);
             updateButtonImage("720", "720on", bd720ImagePath);
+            updateButtonImage("ova", "ovaon", ovaImagePath);
             updateButtonImage("S1", "S1on", S1ImagePath);
             updateButtonImage("S2", "S2on", S2ImagePath);
             updateButtonImage("S3", "S3on", S3ImagePath);

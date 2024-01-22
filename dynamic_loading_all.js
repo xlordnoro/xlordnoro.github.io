@@ -63,6 +63,7 @@ jQuery(function ($) {
 
         // Update the button images if the div with class "button_code" is present
         if ($('.button_code, div[style="margin-left: auto; margin-right: auto;"]').length) {
+            console.log("Before updateButtonImage");
             updateButtonImage("bd1080", "bd1080on", bd1080ImagePath);
             updateButtonImage("bd720", "bd720on", bd720ImagePath);
             updateButtonImage("1080", "1080on", bd1080ImagePath);
@@ -86,6 +87,7 @@ jQuery(function ($) {
             updateButtonImage("fifth_season_bd720", "fifth_season_bd720_on", fifthSeasonBd720Path);
             updateButtonImage("sixth_season_bd1080", "sixth_season_bd1080_on", sixthSeasonBd1080Path);
             updateButtonImage("sixth_season_bd720", "sixth_season_bd720_on", sixthSeasonBd720Path);
+            console.log("After updateButtonImage");
         }
 
         // Update the donation image if the anchor tag with class "donateImage" is present

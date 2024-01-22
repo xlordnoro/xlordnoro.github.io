@@ -76,4 +76,6 @@ January 20, 2024 - v2.9 - Scrapped all the post images from Senri, Fully, Jonlxh
 
 January 21, 2024 - v2.9.1 - Added a bunch of fullcounter's button which the scraper missed. Likely due to it missing some of the new selectors that were added later for Senri's posts. Added a new path and case switch for ova button images.
 
-Same Day - v2.9.2 - Corrected a typo in the ova path so it points to the ova.jpg instead of bd720.jpg which was a copy paste error on my part. I added another switch case since they are case sensitive and that may cause certain button to not load from the repo correctly.
+Same Day - v2.9.2 - Corrected a typo in the ova path so it points to the ova.jpg instead of bd720.jpg which was a copy paste error on my part. I added another switch case since they are case sensitive and that may cause certain buttons to not load from the repo correctly.
+
+January 22, 2024 - v2.9.3 - I added another button class selector which determines if the button images will be loaded or not since Fully's div style is slightly different than Senri's and that was causing none of the button images to load from the repo on his posts.

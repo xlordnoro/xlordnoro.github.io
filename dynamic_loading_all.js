@@ -89,7 +89,7 @@ jQuery(function ($) {
         }
 
         // Update the donation image if the anchor tag with class "donateImage" is present
-        if ($('a.donateImage, p.donation img, a.pleaseImage, a.postMakerADonate').length) {
+        if ($('a.donateImage, a.donateImage.hovertext img, p.donation img, a.pleaseImage, a.postMakerADonate').length) {
             updateDonationImage(postNumber, donationImagePath);
         }
 
@@ -114,10 +114,32 @@ jQuery(function ($) {
         // Spoiler image paths
         var spoiler1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd1080.jpg";
         var spoiler720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/bd720.jpg";
+        var spoilerS1aPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S1a.jpg";
+        var spoilerS1bPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S1b.jpg";
+        var spoilerS2aPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S2a.jpg";
+        var spoilerS2bPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S2b.jpg";
+        var spoilerS3Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S3.jpg";
+        var spoilerS3aPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S3a.jpg";
+        var spoilerS3bPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S3b.jpg";
+        var spoilerS4Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S4.jpg";
+        var spoilerS5Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S5.jpg";
+        var spoilerS5HDPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S5HD.jpg";
+        var spoilerS5FHDPath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S5FHD.jpg";
 
         // Update spoiler images
         updateSpoilerImage("btnS1", spoiler1080Path);
+        updateSpoilerImage("btnS1a", spoilerS1aPath);
+        updateSpoilerImage("btnS1b", spoilerS1bPath);
         updateSpoilerImage("btnS2", spoiler720Path);
+        updateSpoilerImage("btnS2a", spoilerS2aPath);
+        updateSpoilerImage("btnS2b", spoilerS2bPath);
+        updateSpoilerImage("btnS3", spoilerS3Path);
+        updateSpoilerImage("btnS3a", spoilerS3aPath);
+        updateSpoilerImage("btnS3b", spoilerS3bPath);
+        updateSpoilerImage("btnS4", spoilerS4Path);
+        updateSpoilerImage("btnS5", spoilerS5Path);
+        updateSpoilerImage("btnS5HD", spoilerS5HDPath);
+        updateSpoilerImage("btnS5FHD", spoilerS5FHDPath);
     }
 
     // Function to update a button image

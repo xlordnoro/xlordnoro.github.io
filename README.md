@@ -79,3 +79,5 @@ January 21, 2024 - v2.9.1 - Added a bunch of fullcounter's button which the scra
 Same Day - v2.9.2 - Corrected a typo in the ova path so it points to the ova.jpg instead of bd720.jpg which was a copy paste error on my part. I added another switch case since they are case sensitive and that may cause certain buttons to not load from the repo correctly.
 
 January 22, 2024 - v2.9.3 - I added another button class selector which determines if the button images will be loaded or not since Fully's div style is slightly different than Senri's and that was causing none of the button images to load from the repo on his posts.
+
+Same Day - v3.0 - I added all of A-Kuma's post images to the repo and expanded the dynamic_loading_all.js to handle more variance within spoiler images as that's what A-Kuma used for his posts on the site. Might need to fine-tune the script a bit more, but most of the new code is functional.

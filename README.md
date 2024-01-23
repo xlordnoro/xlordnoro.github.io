@@ -81,3 +81,5 @@ Same Day - v2.9.2 - Corrected a typo in the ova path so it points to the ova.jpg
 January 22, 2024 - v2.9.3 - I added another button class selector which determines if the button images will be loaded or not since Fully's div style is slightly different than Senri's and that was causing none of the button images to load from the repo on his posts.
 
 Same Day - v3.0 - I added all of A-Kuma's post images to the repo and expanded the dynamic_loading_all.js to handle more variance within spoiler images as that's what A-Kuma used for his posts on the site. Might need to fine-tune the script a bit more, but most of the new code is functional.
+
+January 23, 2024 - v3.0.1 - Added the button images for tsundere akyuyaku & iseleve along with some new covers for both posts. Added an iseleve_keydown.js file to switch between the covers.

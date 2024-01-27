@@ -83,3 +83,5 @@ January 22, 2024 - v2.9.3 - I added another button class selector which determin
 Same Day - v3.0 - I added all of A-Kuma's post images to the repo and expanded the dynamic_loading_all.js to handle more variance within spoiler images as that's what A-Kuma used for his posts on the site. Might need to fine-tune the script a bit more, but most of the new code is functional.
 
 January 23, 2024 - v3.0.1 - Added the button images for tsundere akyuyaku & iseleve along with some new covers for both posts. Added an iseleve_keydown.js file to switch between the covers.
+
+January 27, 2024 - v3.0.2 - Added all the new winter 2024 entries to the all projects list. I can finally automate that process now since I have proper duplication checks when writing new entries to the txt file vs before which would always append entries even if they were already present within the txt file.

@@ -85,3 +85,5 @@ Same Day - v3.0 - I added all of A-Kuma's post images to the repo and expanded t
 January 23, 2024 - v3.0.1 - Added the button images for tsundere akyuyaku & iseleve along with some new covers for both posts. Added an iseleve_keydown.js file to switch between the covers.
 
 January 27, 2024 - v3.0.2 - Added all the new winter 2024 entries to the all projects list. I can finally automate that process now since I have proper duplication checks when writing new entries to the txt file vs before which would always append entries even if they were already present within the txt file.
+
+February 9, 2024 - v3.1 - Added donation_widget.js which automatically changes the month and year in the widget so that it doesn't need to be updated manually every month.

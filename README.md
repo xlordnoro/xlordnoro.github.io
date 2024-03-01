@@ -89,3 +89,5 @@ January 27, 2024 - v3.0.2 - Added all the new winter 2024 entries to the all pro
 February 9, 2024 - v3.1 - Added donation_widget.js which automatically changes the month and year in the widget so that it doesn't need to be updated manually every month.
 
 February 28, 2024 - v3.2 - Added more cover, button, and donation images from newer posts in the Winter 2024 lineup.
+
+March 1, 2024 - v3.2.1 - Added the button images for the BD's of Akuyaku reijou nanode.

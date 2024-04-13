@@ -91,3 +91,5 @@ February 9, 2024 - v3.1 - Added donation_widget.js which automatically changes t
 February 28, 2024 - v3.2 - Added more cover, button, and donation images from newer posts in the Winter 2024 lineup.
 
 March 1, 2024 - v3.2.1 - Added the button images for the BD's of Akuyaku reijou nanode.
+
+April 13, 2024 - v3.3 - Added all of playcool's images that have been attended to so far on the site. Along with adding any new series/changes on existing posts.

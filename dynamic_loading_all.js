@@ -88,6 +88,28 @@ jQuery(function ($) {
             updateButtonImage("sixth_season_bd720", "sixth_season_bd720_on", sixthSeasonBd720Path);
         }
 
+        for (var i = 0; i < 10; i++) {
+            // Use a closure to capture the current loop variable
+            (function (index) {
+            var currentImagePath2;
+                if (index === 0) {
+                    currentImagePath2 = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
+                    } else {
+                    currentImagePath2 = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation" + index + ".jpg";
+                    }
+                    var donationImageElements = $('a.donateImage, a.donateImage.hovertext img, p.donation img, a.pleaseImage, a.postMakerADonate');
+    
+                    if (donationImageElements.length) {
+                        loadImage(currentImagePath2, function () {
+                            donationImageElements.find("img").eq(index).attr("src", currentImagePath2);
+                            console.log("donation image loaded successfully!");
+                        }, function (error) {
+                            console.error(error);
+                        });
+                    }
+                })(i);
+            }    
+
         // Update the donation image if the anchor tag with class "donateImage" is present
         if ($('a.donateImage, a.donateImage.hovertext img, p.donation img, a.pleaseImage, a.postMakerADonate').length) {
             updateDonationImage(postNumber, donationImagePath);

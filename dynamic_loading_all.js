@@ -10,7 +10,7 @@ jQuery(function ($) {
         var S3ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S3.jpg";
         var S4ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S4.jpg";
         var S5ImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/S5.jpg";
-        
+
         // New button image paths
         var firstSeasonBd1080Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/first_season_bd1080.jpg";
         var firstSeasonBd720Path = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/button_images/" + postNumber + "/first_season_bd720.jpg";
@@ -27,8 +27,8 @@ jQuery(function ($) {
 
         // Donation image path
         var donationImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
-
-        // Update the cover image if any of the anchor tags or images are present
+		
+		// Update the cover image if any of the anchor tags or images are present
         var coverImageElements = $('a.coverImage, p.image, a.coverImage1, img.animeImage, img.coverImage, img.mainImage, a.postMakerAShowMovie');
         if (coverImageElements.length) {
             loadImage(coverImagePath, function () {
@@ -38,28 +38,39 @@ jQuery(function ($) {
             });
         }
 
-		// Additional cover image paths
-        for (var i = 0; i < 6; i++) {
-        // Use a closure to capture the current loop variable
-        (function (index) {
-        var currentImagePath;
-            if (index === 0) {
-                currentImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover.jpg";
-                } else {
-                currentImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover" + index + ".jpg";
-                }
-                var coverImageElements = $('.coverImage');
+		// Define an array to hold the paths of all cover images
+		var coverImagePaths = [];
 
-                if (coverImageElements.length) {
-                    loadImage(currentImagePath, function () {
-                        coverImageElements.find("img").eq(index).attr("src", currentImagePath);
-                        console.log("Cover image loaded successfully!");
-                    }, function (error) {
-                        console.error(error);
-                    });
-                }
-            })(i);
-        }
+		// Generate paths for all cover images and add them to the array
+		for (var i = 0; i < 10; i++) {
+		var currentImagePath;
+			if (i === 0) {
+			currentImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover.jpg";
+			} else {
+			currentImagePath = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/" + postNumber + "/cover" + i + ".jpg";
+		}
+		coverImagePaths.push(currentImagePath);
+	}
+
+		// Function to load the cover images in order
+		function loadCoverImages(index) {
+		if (index < coverImagePaths.length) {
+			loadImage(coverImagePaths[index], function () {
+				// Set the source for the cover image at the specified index
+				$('.coverImage').find("img").eq(index).attr("src", coverImagePaths[index]);
+				console.log("Cover image " + index + " loaded successfully!");
+				// Load the next cover image
+				loadCoverImages(index + 1);
+			}, function (error) {
+				console.error("Error loading cover image " + index + ":", error);
+				// Proceed to load the next cover image even if there's an error
+				loadCoverImages(index + 1);
+			});
+		}
+	}
+
+		// Start loading the cover images from the first index (0)
+		loadCoverImages(0);
 
         // Update the button images if the div with class "button_code" is present
         if ($('.button_code, div[style="margin-left: auto; margin-right: auto;"], div[style="margin-left:auto; margin-right:auto"]').length) {
@@ -88,27 +99,39 @@ jQuery(function ($) {
             updateButtonImage("sixth_season_bd720", "sixth_season_bd720_on", sixthSeasonBd720Path);
         }
 
+        // Define an array to hold the paths of all donation images
+        var donationImagePaths = [];
+
+        // Generate paths for all donation images and add them to the array
         for (var i = 0; i < 10; i++) {
-            // Use a closure to capture the current loop variable
-            (function (index) {
             var currentImagePath2;
-                if (index === 0) {
-                    currentImagePath2 = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
-                    } else {
-                    currentImagePath2 = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation" + index + ".jpg";
-                    }
-                    var donationImageElements = $('a.donateImage, a.donateImage.hovertext img, p.donation img, a.pleaseImage, a.postMakerADonate');
-    
-                    if (donationImageElements.length) {
-                        loadImage(currentImagePath2, function () {
-                            donationImageElements.find("img").eq(index).attr("src", currentImagePath2);
-                            console.log("donation image loaded successfully!");
-                        }, function (error) {
-                            console.error(error);
-                        });
-                    }
-                })(i);
-            }    
+            if (i === 0) {
+            currentImagePath2 = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation.jpg";
+            } else {
+            currentImagePath2 = "https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/donation_images/" + postNumber + "/donation" + i + ".jpg";
+            }
+            donationImagePaths.push(currentImagePath2);
+        }
+
+        // Function to load the donation images in order
+        function loadDonationImages(index) {
+            if (index < donationImagePaths.length) {
+                loadImage(donationImagePaths[index], function () {
+                    // Set the source for the donation image at the specified index
+                    $('.donateImage').eq(index).find("img").attr("src", donationImagePaths[index]);
+                    console.log("Donation image " + index + " loaded successfully!");
+                    // Load the next donation image
+                    loadDonationImages(index + 1);
+                }, function (error) {
+                    console.error("Error loading donation image " + index + ":", error);
+                    // Proceed to load the next donation image even if there's an error
+                    loadDonationImages(index + 1);
+                });
+            }
+        }
+
+        // Start loading the donation images from the first index (0)
+        loadDonationImages(0);
 
         // Update the donation image if the anchor tag with class "donateImage" is present
         if ($('a.donateImage, a.donateImage.hovertext img, p.donation img, a.pleaseImage, a.postMakerADonate').length) {

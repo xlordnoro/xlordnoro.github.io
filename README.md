@@ -93,3 +93,5 @@ February 28, 2024 - v3.2 - Added more cover, button, and donation images from ne
 March 1, 2024 - v3.2.1 - Added the button images for the BD's of Akuyaku reijou nanode.
 
 April 13, 2024 - v3.3-v3.3.1 - Added all of playcool's images that have been attended to so far on the site. Along with adding any new series/changes on existing posts. Added more entries to the all projects list on the site.
+
+April 15, 2024 - v3.4-v3.4.1 - Add more of playcool's images to the repo since Imgur is really turning up the shit dial. Added proper multiple cover and donation images dynamic loading.

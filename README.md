@@ -97,3 +97,5 @@ April 13, 2024 - v3.3-v3.3.1 - Added all of playcool's images that have been att
 April 15, 2024 - v3.4-v3.4.1 - Add more of playcool's images to the repo since Imgur is really turning up the shit dial. Added proper multiple cover and donation images dynamic loading.
 
 April 17, 2024 - v3.5 - Added more of Playcool's image to the repo.
+
+January 16, 2025 - v3.5.1 - Added some images from my new ongoings. I really fucking hate imgur for doing all this BS.

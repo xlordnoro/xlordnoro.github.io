@@ -1,22 +1,28 @@
 jQuery(document).ready(function ($) {
-    function handleImageError(img) {
+    function handleImageLoadSequence(img) {
         const postId = $(img).closest('[id^="post-"]').attr('id').split('-')[1]; 
-        const fallbackURL = `https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/${postId}/cover.jpg`;
-        if ($(img).attr('src') !== fallbackURL) {
-            $(img).attr('src', fallbackURL);
-            $(img).on('load', function () {
-                console.log(`Fallback image loaded successfully from GitHub repository for post ID: ${postId}`);
+        const githubURL = `https://raw.githubusercontent.com/xlordnoro/xlordnoro.github.io/master/cover_images/${postId}/cover.jpg`;
+        const imgurFallbackURL = `https://i.imgur.com/${$(img).attr('src').split('/').pop()}`;
+        
+        console.log(`Attempting to load GitHub image for post ID: ${postId}`);
+        $(img).attr('src', githubURL)
+            .on('load', function () {
+                console.log(`GitHub image loaded successfully for post ID: ${postId}`);
+            })
+            .on('error', function () {
+                console.warn(`GitHub image not found for post ID: ${postId}. Falling back to Imgur.`);
+                $(img).attr('src', imgurFallbackURL)
+                    .on('load', function () {
+                        console.log(`Imgur fallback image loaded successfully for post ID: ${postId}`);
+                    })
+                    .on('error', function () {
+                        console.error(`Image failed to load from both GitHub and Imgur for post ID: ${postId}`);
+                    });
             });
-        } else {
-            console.error(`Image failed to load from both original and fallback sources for post ID: ${postId}`);
-        }
     }
 
+    // Apply the logic to all images in the specified container
     $('#main .site-content article .coverImage img').each(function () {
-        $(this).on('error', function () {
-            handleImageError(this);
-        }).on('load', function () {
-            console.log(`Cover image loaded successfully: ${$(this).attr('src')}`);
-        });
+        handleImageLoadSequence(this);
     });
 });

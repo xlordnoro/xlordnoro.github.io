@@ -1,41 +1,53 @@
-        #snow-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-        }
-        .snowflake {
-            position: absolute;
-            top: -10px;
-            background: none;
-            color: black; /* Snowflake color */
-            font-size: 10px; /* Adjust size */
-            opacity: 0.8;
-            animation: fallAndSway linear infinite;
-            transform: rotate(0deg);
-        }
-        .snowflake::before,
-        .snowflake::after {
-            content: '❄'; /* Unicode snowflake character */
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font-size: inherit;
-            color: inherit;
-            opacity: inherit;
-        }
-        @keyframes fallAndSway {
-            0% {
-                transform: translate(0, -10px);
-            }
-            50% {
-                transform: translate(20px, 50vh);
-            }
-            100% {
-                transform: translate(-20px, 100vh);
-            }
-        }
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background: none;
+    color: #000; /* Default = light theme */
+    font-size: 10px;
+    opacity: 0.6;
+    animation: fallAndSway linear infinite;
+}
+
+/* Snowflake shape */
+.snowflake::before,
+.snowflake::after {
+    content: '❄';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: inherit;
+    color: inherit;
+    opacity: inherit;
+}
+
+/* Dark mode override */
+@media (prefers-color-scheme: dark) {
+    .snowflake {
+        color: #ffffff;
+        opacity: 0.85;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    }
+}
+
+@keyframes fallAndSway {
+    0% {
+        transform: translate(0, -10px);
+    }
+    50% {
+        transform: translate(20px, 50vh);
+    }
+    100% {
+        transform: translate(-20px, 100vh);
+    }
+}

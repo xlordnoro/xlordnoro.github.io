@@ -1,0 +1,6 @@
+.showLinksTable a,
+.showSynopsisTable a,
+.batchLinksTable a,
+.entry-content a {
+  color: #6edc4a !important;
+}

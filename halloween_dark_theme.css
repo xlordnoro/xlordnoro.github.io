@@ -1,0 +1,47 @@
+
+#halloween-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.halloween-particle {
+    position: absolute;
+    top: -10px;
+    background: none;
+    color: #ff7518; /* Halloween orange */
+    font-size: 16px;
+    opacity: 0.85;
+    animation: fallAndSway linear infinite;
+    transform: rotate(0deg);
+    text-shadow: 0 0 6px rgba(255, 117, 24, 0.5);
+}
+
+/* Halloween particle symbol */
+.halloween-particle::before {
+    content: '🎃';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: inherit;
+    color: inherit;
+    opacity: inherit;
+}
+
+@keyframes fallAndSway {
+    0% {
+        transform: translate(0, -10px) rotate(0deg);
+    }
+    50% {
+        transform: translate(20px, 50vh) rotate(180deg);
+    }
+    100% {
+        transform: translate(-20px, 100vh) rotate(360deg);
+    }
+}

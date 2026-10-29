@@ -1,0 +1,72 @@
+
+/* Halloween particle container */
+#halloween-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Falling Halloween elements */
+.halloween-particle {
+    position: absolute;
+    top: -30px;
+    background: none;
+    color: #ff7518;
+    font-size: 16px;
+    opacity: 0.75;
+    line-height: 1;
+    animation: fallAndSway linear infinite;
+    will-change: transform;
+    user-select: none;
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    .halloween-particle {
+        text-shadow: 0 0 3px rgba(255, 117, 24, 0.15);
+    }
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    .halloween-particle {
+        opacity: 0.9;
+        text-shadow: 0 0 8px rgba(255, 117, 24, 0.45);
+    }
+}
+
+/* Falling and drifting animation */
+@keyframes fallAndSway {
+    0% {
+        transform: translate3d(0, -10vh, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate3d(20px, 25vh, 0) rotate(90deg);
+    }
+
+    50% {
+        transform: translate3d(-15px, 50vh, 0) rotate(180deg);
+    }
+
+    75% {
+        transform: translate3d(15px, 75vh, 0) rotate(270deg);
+    }
+
+    100% {
+        transform: translate3d(-10px, 110vh, 0) rotate(360deg);
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .halloween-particle {
+        animation: none;
+        display: none;
+    }
+}

@@ -1,45 +1,26 @@
-
-/**
- * Creates falling Halloween particles across the page.
- * Requires jQuery and an element with id="halloween-container".
- */
 jQuery(function ($) {
     const $container = $('#halloween-container');
 
-    if (!$container.length) {
-        return;
-    }
+    // Halloween icons to randomly display.
+    const halloweenIcons = ['🎃', '👻', '🦇', '🕷️', '🍂'];
 
-    // Mix of Halloween-themed symbols.
-    const halloweenSymbols = [
-        '🦇', // Bat
-        '👻', // Ghost
-        '🎃', // Pumpkin
-        '🕸️', // Spider web
-        '🍂', // Autumn leaf
-        '🕷️'  // Spider
-    ];
-
-    const particleCount = 50;
-
-    for (let i = 0; i < particleCount; i++) {
-        const symbol = halloweenSymbols[
-            Math.floor(Math.random() * halloweenSymbols.length)
+    for (let i = 0; i < 50; i++) {
+        const icon = halloweenIcons[
+            Math.floor(Math.random() * halloweenIcons.length)
         ];
 
         const $particle = $('<div class="halloween-particle"></div>');
 
-        $particle.text(symbol);
+        // Set a random Halloween icon.
+        $particle.text(icon);
 
-        const size = Math.random() * 12 + 10; // 10px–22px
-        const duration = Math.random() * 10 + 8; // 8–18 seconds
+        const size = Math.random() * 10 + 5; // Random size between 5px and 15px
 
         $particle.css({
             fontSize: `${size}px`,
             left: `${Math.random() * 100}vw`,
-            animationDelay: `${Math.random() * duration}s`,
-            animationDuration: `${duration}s`,
-            opacity: Math.random() * 0.4 + 0.4
+                      animationDelay: `${Math.random() * 10}s`,
+                      animationDuration: `${Math.random() * 10 + 5}s`,
         });
 
         $container.append($particle);
